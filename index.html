@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog Viewer</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            background-color: #f4f4f9; 
+            padding-top: 100px; 
+        }
+        h2 { color: #333; margin-bottom: 30px; }
+        .btn { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            margin: 15px; 
+            font-size: 18px; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            transition: 0.3s; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-simple { background-color: #0056b3; }
+        .btn-booklet { background-color: #d35400; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <h2>How would you like to view the catalog?</h2>
+    
+    <!-- Button for Simple PDF -->
+    <a href="catalog.pdf" class="btn btn-simple" target="_blank">View Simple PDF</a>
+    
+    <!-- Button for 3D Booklet -->
+    <a href="booklet.html" class="btn btn-booklet">View as Booklet (Flipbook)</a>
+</body>
+</html>
